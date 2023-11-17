@@ -1,0 +1,117 @@
+1.package collection;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FilterOutputStream;
+import java.io.IOException;
+import java.io.PrintStream;
+
+public class Filehandling {
+
+	public static void main(String[] args) throws IOException {
+		FileOutputStream f=new FileOutputStream("d://emp.txt");
+PrintStream p=new PrintStream(f);
+p.println(25);
+p.println("cheery");
+p.println("25000");
+f.close();
+p.close();
+System.out.println("employer details");
+
+
+
+	}
+
+}
+
+
+2.public class Filehandling1 {
+
+	public static void main(String[] args) throws IOException {
+		FileWriter fn=new FileWriter("d://rw.txt");
+		
+		
+		fn.write("checked");
+		
+		int i;
+		FileReader fs1=new FileReader("d://rw.txt");
+		
+		while((i=fs1.read())!=-1)
+			
+			System.out.println(i);
+			System.out.println("granted");
+		    fn.close();
+			fs1.close();
+			
+		}
+		
+		
+	}
+
+
+3. package collection;
+
+import java.util.Scanner;
+
+public class K22 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the rollno");
+		int rollno=sc.nextInt();
+		System.out.println("enter the name");
+		String name=sc.next();
+		System.out.println("enter the salary");
+		double salary=sc.nextDouble();
+		System.out.println("enter the Boolean value(true/false):");
+	    Boolean value=sc.nextBoolean();
+	    System.out.println(rollno+" "+name+" "+salary+" "+value);
+			
+		}
+
+	}
+
+
+5.package collection;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintStream;
+
+public class K23 {
+
+	public static void main(String[] args) throws IOException {
+		FileOutputStream fs=new FileOutputStream("d://data.txt");
+FileWriter fw=new FileWriter("fs");
+PrintStream p1=new PrintStream(fs);
+//fw.write("granted");
+p1.println("cherry");
+p1.println("balaji");
+p1.println(78);
+p1.close();
+fw.close();
+System.out.println("processing.....");
+
+	}
+
+}
+
+4. import java.io.BufferedReader;
+import java.io.Console;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Buffer1 {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		Console c=System.console();  
+		System.out.println("Enter password: ");  
+		char[] ch=c.readPassword();  
+		String pass=String.valueOf(ch);//converting char array into string  
+		System.out.println("Password is: ");  
+	}
+
+}
